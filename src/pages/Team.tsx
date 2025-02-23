@@ -6,17 +6,17 @@ const Team = () => {
   const teamMembers = {
     leadership: [
       {
-        name: 'Dr. Amit Kumar',
-        role: 'Faculty Advisor',
+        name: 'Dr. Kamal Kishore Malhotra',
+        role: 'CEO',
         image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
         social: {
-          linkedin: '#',
+          linkedin: 'https://www.linkedin.com/in/kamal-kishor-malhotra-bb76a221a',
           email: 'mailto:amit@example.com'
         }
       },
       {
-        name: 'Rahul Sharma',
-        role: 'President',
+        name: 'Dr. Aradhana Galgotia',
+        role: 'Director Operations',
         image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
         social: {
           linkedin: '#',
@@ -24,52 +24,126 @@ const Team = () => {
           email: 'mailto:rahul@example.com'
         }
       },
-      {
-        name: 'Priya Patel',
-        role: 'Vice President',
-        image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-        social: {
-          linkedin: '#',
-          twitter: '#',
-          email: 'mailto:priya@example.com'
-        }
-      }
+      
     ],
     ecell: [
       {
-        name: 'Sneha Gupta',
-        role: 'Events Coordinator',
-        image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        name: 'Aastha Bajaj',
+        role: 'President',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337947/wczhdmfkchi4qxwdsplz.png',
         social: {
-          linkedin: '#',
+          linkedin: 'https://www.linkedin.com/in/aastha-bajaj-862a2225a',
           twitter: '#',
           email: 'mailto:sneha@example.com'
         }
       },
       {
-        name: 'Arjun Singh',
-        role: 'Technical Lead',
+        name: 'Anshu Raj',
+        role: 'Vice President',
         image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
         social: {
-          linkedin: '#',
+          linkedin: 'https://www.linkedin.com/in/anshu-raj2006',
           twitter: '#',
           email: 'mailto:arjun@example.com'
         }
       },
       {
-        name: 'Neha Sharma',
-        role: 'Marketing Head',
+        name: 'Abhinna Chaudhary',
+        role: 'Secretary',
         image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
         social: {
-          linkedin: '#',
+          linkedin: 'https://www.linkedin.com/in/abhinna-chaudhary-203a3a260',
+          twitter: '#',
+          email: 'mailto:neha@example.com'
+        }
+      },
+      {
+        name: 'Umang Jain',
+        role: 'Treasurer',
+        image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        social: {
+          linkedin: 'https://www.linkedin.com/in/umangjain2003',
           twitter: '#',
           email: 'mailto:neha@example.com'
         }
       }
+    ],
+    head: [
+      {
+        name: 'Tanishqa Giri',
+        role: 'Startup Development Team',
+        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        social: {
+          linkedin: 'https://www.linkedin.com/in/tanishqa-giri-b29a15260',
+          twitter: '#',
+          email: 'mailto:john@example.com'
+        }
+      },
+      {
+        name: 'Shreeshant Prasad',
+        role: 'Technical Team',
+        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        social: {
+          linkedin: 'https://www.linkedin.com/in/shreeshant-prasad-1b1656297/',
+          twitter: '#',
+          email: 'mailto:john@example.com'
+        }
+      },
+      {
+        name: 'Anshika Saxena',
+        role: 'Public Relations Team',
+        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        social: {
+          linkedin: 'https://www.linkedin.com/in/shreeshant-prasad-1b1656297/',
+          twitter: '#',
+          email: 'mailto:john@example.com'
+        }
+      },
+      {
+        name: 'Amish Roushan',
+        role: 'Digital Media & Promotions Team',
+        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        social: {
+          linkedin: 'https://www.linkedin.com/in/amish-roushan-0425662a3',
+          twitter: '#',
+          email: 'mailto:john@example.com'
+        }
+      },
+      {
+        name: 'Shaivy Patel',
+        role: 'Marketing Head',
+        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        social: {
+          linkedin: 'https://www.linkedin.com/in/shaivy-patel-2b97142a5',
+          twitter: '#',
+          email: 'mailto:john@example.com'
+        }
+      },
+      {
+        name: 'Ankur Singh',
+        role: 'Ambassador Head',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337946/xlyk7salvhqbihkajz41.png',
+        social: {
+          linkedin: 'https://www.linkedin.com/in/ankur-singh-822386286',
+          twitter: '#',
+          email: 'mailto:john@example.com'
+        }
+      },
+      {
+        name: 'Piyush Bhardwaj',
+        role: 'Event Management Head',
+        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        social: {
+          linkedin: 'https://www.linkedin.com/in/piyush-bhardwaj-2a6b98247',
+          twitter: '#',
+          email: 'mailto:john@example.com'
+        }
+      },
+
     ]
   };
 
-  const TeamSection = ({ title, members, icon: Icon }) => (
+  const TeamSection = ({ title, members, icon: Icon }: { title: string; members: { name: string; role: string; image: string; social: { linkedin?: string; twitter?: string; email?: string } }[]; icon: React.ComponentType<{ className?: string }> }) => (
     <div className="mb-16">
       <div className="flex items-center mb-8">
         <Icon className="h-8 w-8 text-blue-400 mr-3" />
@@ -147,7 +221,8 @@ const Team = () => {
         </motion.div>
 
         <TeamSection title="Leadership Team" members={teamMembers.leadership} icon={Star} />
-        <TeamSection title="E-Cell Team" members={teamMembers.ecell} icon={Users} />
+        <TeamSection title="Core Team" members={teamMembers.ecell} icon={Users} />
+        <TeamSection title="Heads" members={teamMembers.head} icon={Users} />
       </div>
     </div>
   );
