@@ -102,7 +102,7 @@ const Team = () => {
       {
         name: 'Amish Roushan',
         role: 'Digital Media & Promotions Team',
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337946/miacuad7msfbq8gtrx4v.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/amish-roushan-0425662a3',
           twitter: '#',

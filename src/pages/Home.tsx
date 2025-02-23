@@ -29,7 +29,7 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto"
           >
-            Join Galgotias University's thriving ecosystem of innovation and entrepreneurship
+            Join Galgotias University's thriving ecosystem of Innovation and Entrepreneurship
           </motion.p>
           <motion.a
             initial={{ opacity: 0, y: 20 }}
