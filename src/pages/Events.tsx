@@ -121,20 +121,19 @@ const events = {
   ],
   2022: [
     {
-      title: 'Pitch Perfect',
+      title: 'Pitch Me',
       date: 'November 10, 2022',
       image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-      description: 'Startup pitch competition with cash prizes and mentorship opportunities.',
+      description: 'Pitch Me is a series event of pitching competiton which occurs yearly. Industry investors come and judges the idea. Pitch Me was an annual entrepreneurial extravaganza where innovators had 10 minutes to pitch their game-changing ideas to industry investors and a panel of seasoned judges. This dynamic event combined high-stakes competition with invaluable networking opportunities, offering entrepreneurs the chance to secure investment, refine their concepts, and form lasting connections within the startup ecosystem. Joining us at Pitch Me meant witnessing the birth of the next big thing and being a part of the innovation revolution.',
       details: 'An exciting competition where startups pitched their innovative ideas to expert judges and investors.',
       photoLink: 'https://drive.google.com/drive/folders/example2022',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
     },
     {
-      title: 'Pitch Perfect',
+      title: 'Launch Pad',
       date: 'November 10, 2022',
       image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-      description: 'Startup pitch competition with cash prizes and mentorship opportunities.',
-      details: 'An exciting competition where startups pitched their innovative ideas to expert judges and investors.',
+      description: 'Launchpad , an event that would spark innovation and creativity by bringing together founders, budding entrepreneurs, mentors, and industry leaders. It is going to be an official event series hosted by Entrepreneurship Cell, Galgotias University. It will be a 24-hour hackathon where people will get together to solve problems or create new ideas around a specific topic. There will be certain rules that everyone needs to follow while developing their product. There will also be a jury who will evaluate the final product. NorthIndia’s Biggest Student Start-up & Entrepreneurship Event of 2023, 2 Day event on campus. Launchpad, would start by a speaker session which would act as a fuel in the minds of the budding entrepreneurs. The Speaker would be a renowned founder from the start-up ecosystem.',
       photoLink: 'https://drive.google.com/drive/folders/example2022',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
     },
@@ -156,7 +155,7 @@ const EventCard = ({ event }: { event: Event }) => {
 
   return (
     <motion.div
-      className="relative h-[400px] perspective-1000"
+      className="relative h-[580px] perspective-1000"
       initial={false}
       animate={{ rotateY: isFlipped ? 180 : 0 }}
       transition={{ duration: 0.6 }}

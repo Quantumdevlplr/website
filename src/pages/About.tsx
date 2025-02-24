@@ -29,7 +29,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl max-w-2xl mx-auto"
           >
-            Fostering innovation and entrepreneurship at Galgotias University
+            Entrepreneurship Cell, Galgotias University strives to stimulate and encourage entrepreneurship and innovation, both within Entrepreneurship Cell and beyond. We endeavour to help aspiring entrepreneurs overcome any hurdles they face and support them in any way possible, including by connecting them to mentors and investors and providing any other support they need. Apart from this, we attempt to enhance the culture of entrepreneurship and invention. From hosting talks with the leaders of various industries, conducting workshops to propagate skills related to entrepreneurship to organizing events and competitions that enable participants to showcase their skills, E-Cell aims to build a community of innovation and excellence.
           </motion.p>
         </div>
       </section>

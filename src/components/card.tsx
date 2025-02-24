@@ -83,19 +83,21 @@ const people = [
     designation: "Chancellor",
     description: "Galgotias University is dedicated to providing a transformative experience for students, focusing on intellectual, social, and personal growth to prepare them for leadership and citizenship. The institution emphasizes 360-degree transformation and strives for excellence at all levels. With a strong value system, cross-disciplinary learning, and flexible academic programs, Galgotias University has become synonymous with quality education. The university offers state-of-the-art infrastructure, domain-expert faculty, and international teaching standards, making it a preferred choice for higher education and a top recruitment destination for leading companies. Students engage in research and public service, contributing significantly to their fields. Galgotias University nurtures world-class professionals by fostering intellectual growth through its Thinking Quotient philosophy. The commitment to continuous development and new opportunities ensures a world-class educational environment, offering a journey of intellectual transformation.",
     image: "https://cilearningschool.com/galgotias_incubation_centre/web/wp-content/uploads/2024/08/sunil.jpg",
-    linkedin: "https://www.linkedin.com/in/suneel-galgotia-77112b19/"
+    linkedin: "https://www.linkedin.com/in/suneel-galgotia-a76864b4"
   },
   {
     name: "Dr. Dhruv",
     designation: "CEO",
     description: "In today's digital era, success lies in the integration of technology, skill development, and education. At Galgotias University, we are committed to continuously upgrading our programs to stay ahead of the fast-evolving technological landscape. We focus on preparing graduates with the technical skills and lifelong learning abilities needed for future careers and entrepreneurship. The university collaborates with industry leaders and regulatory bodies to ensure that education remains relevant. Beyond technical knowledge, we prioritize the development of moral values, intellectual integrity, and leadership qualities in our students, preparing them to become responsible, contributing citizens. With a vibrant campus life filled with clubs, sports, cultural activities, and hackathons, students are encouraged to explore diverse opportunities. I wish all students the best as they embark on their transformative journey at Galgotias University, which will shape their future.",
     image: "https://cilearningschool.com/galgotias_incubation_centre/web/wp-content/uploads/2024/08/ceo.jpg",
+    linkedin: "https://www.linkedin.com/in/dr-dhruv-galgotia-18747885"
   },
   {
     name: "Dr. K. Mallikharjuna Babu",
     designation: "Vice Chancellor",
     description: "Higher education is a continuous journey, and at Galgotias University (GU), we focus on fostering lifelong learning to help students achieve career milestones. As a young, globally recognized institution, GU has made significant strides, including earning a NAAC A+ ranking in 2022 and NBA Accreditation for multiple programs. The university follows a student-centric, inclusive, and holistic approach, empowering students to pursue their goals while adapting to industry trends and research needs. GU offers multidisciplinary, flexible, and value-based programs that emphasize innovative teaching methods, real-world experiences, and the development of critical 21st-century skills like communication, critical thinking, and creativity. Our curriculum integrates internships, projects, and co-curricular activities to help students apply theoretical knowledge and become change-makers in their fields. We collaborate with stakeholders to maintain a research-focused, value-driven academic environment, enabling students to solve real-world problems with empathy and creativity for the betterment of society. Our vision is to provide an education that shapes lives and aligns with our existence and nature, creating impactful individuals ready to contribute to the world.",
     image: "https://gicrise.in/wp-content/themes/gicentre/assets/images/leader_img3.jpg",
+    linkedin: "https://www.linkedin.com/in/profkmbabu"
   },
   {
     name: "Aradhana Galgotia",
