@@ -147,7 +147,7 @@ const Contact = () => {
             {/* Map */}
             <div className="bg-gray-800 rounded-lg shadow-lg p-4 h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.2233207485247!2d77.54567731507926!3d28.466387982486843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea7e051fd949%3A0x89f0001d0d9f9f4b!2sGalgotias%20University!5e0!3m2!1sen!2sin!4v1647887774175!5m2!1sen!2sin"
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14042.900450002624!2d77.5452805!3d28.3671592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc74f456dd24b%3A0x81e731bc39b75c96!2sSector%2017A%2C%20Uttar%20Pradesh%20203201!5e0!3m2!1sen!2sin!4v1740392370826!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

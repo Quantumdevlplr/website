@@ -2,10 +2,56 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, ExternalLink, Camera, User } from 'lucide-react';
 
+
+
+// Define the type for the event
+type Event = {
+  title: string;
+  date: string;
+  image: string;
+  description: string;
+  details: string;
+  photoLink: string;
+  avatar: string;
+};
+
+type EventCarouselProps = {
+  year: string | number;
+  events: Event[];
+};
+
+// Event data
 const events = {
   2025: [
     {
-      title: 'E-Summit 2025',
+      title: 'E-Summit 2021',
+      date: 'March 3-4, 2025',
+      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80',
+      description: 'The biggest entrepreneurship summit featuring industry leaders and innovative startups.',
+      details: 'Join us for two days of inspiring talks, workshops, and networking opportunities with industry leaders and fellow entrepreneurs.',
+      photoLink: 'https://drive.google.com/drive/folders/example2025',
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      title: 'E-Summit 2022',
+      date: 'March 3-4, 2025',
+      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80',
+      description: 'The biggest entrepreneurship summit featuring industry leaders and innovative startups.',
+      details: 'Join us for two days of inspiring talks, workshops, and networking opportunities with industry leaders and fellow entrepreneurs.',
+      photoLink: 'https://drive.google.com/drive/folders/example2025',
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      title: 'E-Summit 2023',
+      date: 'March 3-4, 2025',
+      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80',
+      description: 'The biggest entrepreneurship summit featuring industry leaders and innovative startups.',
+      details: 'Join us for two days of inspiring talks, workshops, and networking opportunities with industry leaders and fellow entrepreneurs.',
+      photoLink: 'https://drive.google.com/drive/folders/example2025',
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      title: 'E-Summit 2024',
       date: 'March 3-4, 2025',
       image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80',
       description: 'The biggest entrepreneurship summit featuring industry leaders and innovative startups.',
@@ -15,6 +61,24 @@ const events = {
     }
   ],
   2024: [
+    {
+      title: 'Startup Weekend',
+      date: 'April 5-7, 2024',
+      image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+      description: 'A 54-hour event where developers, designers, and business professionals come together.',
+      details: 'Experience the thrill of building a startup from scratch in just 54 hours with like-minded innovators.',
+      photoLink: 'https://drive.google.com/drive/folders/example2024',
+      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      title: 'Startup Weekend',
+      date: 'April 5-7, 2024',
+      image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+      description: 'A 54-hour event where developers, designers, and business professionals come together.',
+      details: 'Experience the thrill of building a startup from scratch in just 54 hours with like-minded innovators.',
+      photoLink: 'https://drive.google.com/drive/folders/example2024',
+      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+    },
     {
       title: 'Startup Weekend',
       date: 'April 5-7, 2024',
@@ -34,9 +98,46 @@ const events = {
       details: 'A successful gathering of entrepreneurs, investors, and industry experts sharing insights and opportunities.',
       photoLink: 'https://drive.google.com/drive/folders/example2023',
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      title: 'E-Summit 2023',
+      date: 'March 15-16, 2023',
+      image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+      description: 'Annual entrepreneurship summit featuring keynote speakers and competitions.',
+      details: 'A successful gathering of entrepreneurs, investors, and industry experts sharing insights and opportunities.',
+      photoLink: 'https://drive.google.com/drive/folders/example2023',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      title: 'E-Summit 2023',
+      date: 'March 15-16, 2023',
+      image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+      description: 'Annual entrepreneurship summit featuring keynote speakers and competitions.',
+      details: 'A successful gathering of entrepreneurs, investors, and industry experts sharing insights and opportunities.',
+      photoLink: 'https://drive.google.com/drive/folders/example2023',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
     }
+
   ],
   2022: [
+    {
+      title: 'Pitch Perfect',
+      date: 'November 10, 2022',
+      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+      description: 'Startup pitch competition with cash prizes and mentorship opportunities.',
+      details: 'An exciting competition where startups pitched their innovative ideas to expert judges and investors.',
+      photoLink: 'https://drive.google.com/drive/folders/example2022',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      title: 'Pitch Perfect',
+      date: 'November 10, 2022',
+      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+      description: 'Startup pitch competition with cash prizes and mentorship opportunities.',
+      details: 'An exciting competition where startups pitched their innovative ideas to expert judges and investors.',
+      photoLink: 'https://drive.google.com/drive/folders/example2022',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+    },
     {
       title: 'Pitch Perfect',
       date: 'November 10, 2022',
@@ -49,7 +150,8 @@ const events = {
   ]
 };
 
-const EventCard = ({ event }) => {
+// Event Card Component
+const EventCard = ({ event }: { event: Event }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
@@ -59,7 +161,7 @@ const EventCard = ({ event }) => {
       animate={{ rotateY: isFlipped ? 180 : 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className={`absolute inset-0 w-full h-full ${isFlipped ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}>
+      <div className={`absolute inset-0 w-auto h-full ${isFlipped ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}>
         <div className="bg-gray-800 h-full rounded-lg overflow-hidden shadow-xl">
           <div className="relative">
             <img
@@ -140,15 +242,16 @@ const EventCard = ({ event }) => {
   );
 };
 
-const EventCarousel = ({ year, events }) => {
+// Event Carousel Component
+const EventCarousel = ({ year, events }: EventCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % events.length);
+    setCurrentIndex((prev) => (prev + 2) % events.length); // Skip to next two events
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + events.length) % events.length);
+    setCurrentIndex((prev) => (prev - 2 + events.length) % events.length); // Go back two events
   };
 
   return (
@@ -162,12 +265,18 @@ const EventCarousel = ({ year, events }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
+            className="flex space-x-6"
           >
-            <EventCard event={events[currentIndex]} />
+            {/* Show two event cards side by side */}
+            {events.slice(currentIndex, currentIndex + 2).map((event, index) => (
+              <div key={index} className="w-1/2">
+                <EventCard event={event} />
+              </div>
+            ))}
           </motion.div>
         </AnimatePresence>
 
-        {events.length > 1 && (
+        {events.length > 2 && (
           <>
             <button
               onClick={prevSlide}
@@ -188,6 +297,7 @@ const EventCarousel = ({ year, events }) => {
   );
 };
 
+// Main Events Component
 const Events = () => {
   return (
     <div className="py-20 bg-gray-900">
@@ -205,4 +315,4 @@ const Events = () => {
   );
 };
 
-export default Events
+export default Events;
