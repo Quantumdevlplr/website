@@ -80,8 +80,7 @@ const Team = () => {
         image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337945/q68ngp9zffkhco7wcoig.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/umangjain2003',
-          twitter: '#',
-          email: 'mailto:neha@example.com'
+          instagram: 'https://www.instagram.com/iamumangjain?igsh=M2NoYjk3cnZieXBs'
         }
       }
     ],
@@ -102,8 +101,7 @@ const Team = () => {
         image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740344653/IMG_20241113_172609863_pg6tyk.jpg',
         social: {
           linkedin: 'https://www.linkedin.com/in/shreeshant-prasad-1b1656297/',
-          twitter: '#',
-          email: 'mailto:john@example.com'
+          instagram:'https://www.instagram.com/shreeshant_26'
         }
       },
       {
@@ -112,8 +110,7 @@ const Team = () => {
         image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337946/tpj7colvdm4neyuycjuk.jpg',
         social: {
           linkedin: 'https://www.linkedin.com/in/shreeshant-prasad-1b1656297/',
-          twitter: '#',
-          email: 'mailto:john@example.com'
+          instagram:'https://www.instagram.com/anshikasaxena.18'
         }
       },
       {
@@ -141,8 +138,7 @@ const Team = () => {
         image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337946/xlyk7salvhqbihkajz41.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/ankur-singh-822386286',
-          twitter: '#',
-          email: 'mailto:john@example.com'
+          instagram:'https://www.instagram.com/oye_its_ankur'
         }
       },
       {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Award, Users, Lightbulb } from 'lucide-react';
 import { motion } from 'framer-motion';
-import BasicExample from '../components/card';
+import PersonCards from '../components/card';
 
 const Home = () => {
   return (
@@ -88,10 +88,13 @@ const Home = () => {
           </div>
         </div>
       </section>
-<section>
-  <BasicExample/>
+      <section className='mx-40 mt-14'>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Governance</h2>
+      </div>
+        <PersonCards />
 
-</section>
+      </section>
       {/* Latest Events Section */}
       <section className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
