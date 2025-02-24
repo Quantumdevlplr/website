@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Award, Users, Lightbulb } from 'lucide-react';
 import { motion } from 'framer-motion';
+import BasicExample from '../components/card';
 
 const Home = () => {
   return (
@@ -87,7 +88,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+<section>
+  <BasicExample/>
 
+</section>
       {/* Latest Events Section */}
       <section className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

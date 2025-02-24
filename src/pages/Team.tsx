@@ -12,7 +12,7 @@ const Team = () => {
         image:'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740344841/pvc_curluo.png',
         social:{
           linkedin:'https://www.linkedin.com/in/avadhesh-kumar-3a0b2b1b4/',
-          instagram:'https://www.instagram.com/avadhesh_kumar/',
+          instagram:'https://www.instagram.com/dr_avadhesh_kumar',
         }},
 
         {
@@ -21,7 +21,7 @@ const Team = () => {
           image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
           social: {
             linkedin: 'https://www.linkedin.com/in/kamal-kishor-malhotra-bb76a221a',
-            instagram: 'https://www.instagram.com/kamalkishormalhotra/',
+            instagram: 'https://www.instagram.com/malhotrakamalk',
           }
       },
         {
@@ -39,7 +39,7 @@ const Team = () => {
           image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
           social: {
             linkedin: 'https://www.linkedin.com/in/kamal-kishor-malhotra-bb76a221a',
-            instagram: 'https://www.instagram.com/kamalkishormalhotra/',
+            instagram: 'https://www.instagram.com/sourabh_arya4',
           }
       }
     ],
@@ -51,8 +51,7 @@ const Team = () => {
         image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337947/wczhdmfkchi4qxwdsplz.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/aastha-bajaj-862a2225a',
-          twitter: '#',
-          email: 'mailto:sneha@example.com'
+          instagram: 'https://www.instagram.com/aastha_prerna',
         }
       },
       
@@ -62,8 +61,7 @@ const Team = () => {
         image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337946/uw5s0lf0agzj1cydoya6.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/anshu-raj2006',
-          twitter: '#',
-          email: 'mailto:arjun@example.com'
+          instagram: 'https://www.instagram.com/tech_anshraj',
         }
       },
       {
@@ -134,8 +132,7 @@ const Team = () => {
         image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337946/ifzbbyldicdq6htjsc9q.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/shaivy-patel-2b97142a5',
-          twitter: '#',
-          email: 'mailto:john@example.com'
+          instagram: 'https://www.instagram.com/shhhhaivy',
         }
       },
       {
