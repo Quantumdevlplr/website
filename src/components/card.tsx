@@ -7,8 +7,17 @@ import CardActionArea from '@mui/material/CardActionArea';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import { makeStyles } from '@mui/styles';
+import LinkedInIcon from '@mui/icons-material/LinkedIn'; // Import LinkedIn icon
+import IconButton from '@mui/material/IconButton';
 
 const useStyles = makeStyles((theme) => ({
+
+  linkedinIcon: {
+    color: '#0077B5', // LinkedIn blue
+    '&:hover': {
+      color: '#005882', // Darker LinkedIn blue on hover
+    },
+  },
   card: {
     borderRadius: '10px',
     boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
@@ -16,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
       boxShadow: '0 8px 20px rgba(0, 0, 0, 0.15)',
       transform: 'translateY(-5px)',
     },
+    backgroundColor: '#1f2937', // bg-gray-800 in hex
   },
   cardContent: {
     padding: '16px',
@@ -23,23 +33,37 @@ const useStyles = makeStyles((theme) => ({
   },
   cardImage: {
     borderRadius: '10px 10px 0 0',
-    objectFit: 'cover',
+    objectFit: 'cover', // Maintain aspect ratio and cover the area
+    height: 350,       // Set a fixed height
   },
   name: {
     fontWeight: 600,
     fontSize: '1.2rem',
-    color: '#333',
+    color: '#fff',
   },
   designation: {
-    color: '#555',
+    color: '#fff',
     margin: '8px 0',
   },
   description: {
     fontSize: '0.9rem',
-    color: '#666',
+    color: '#fff',
     marginBottom: '16px',
     lineHeight: 1.5,
     textAlign: 'justify',
+    // Add overflow properties for long text
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    display: '-webkit-box',
+    '-webkit-line-clamp': 4, // Show maximum 4 lines by default
+    '-webkit-box-orient': 'vertical',
+  },
+  expandedDescription: { // Style for expanded description
+    overflow: 'hidden', // Keep overflow hidden for expanded view
+    textOverflow: 'ellipsis',
+    display: '-webkit-box',
+    '-webkit-line-clamp': 100, // Show many lines when expanded
+    '-webkit-box-orient': 'vertical',
   },
   button: {
     color: '#0066cc',
@@ -52,12 +76,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 const people = [
   {
     name: "Mr. Suneel Galgotia",
     designation: "Chancellor",
     description: "Galgotias University is dedicated to providing a transformative experience for students, focusing on intellectual, social, and personal growth to prepare them for leadership and citizenship. The institution emphasizes 360-degree transformation and strives for excellence at all levels. With a strong value system, cross-disciplinary learning, and flexible academic programs, Galgotias University has become synonymous with quality education. The university offers state-of-the-art infrastructure, domain-expert faculty, and international teaching standards, making it a preferred choice for higher education and a top recruitment destination for leading companies. Students engage in research and public service, contributing significantly to their fields. Galgotias University nurtures world-class professionals by fostering intellectual growth through its Thinking Quotient philosophy. The commitment to continuous development and new opportunities ensures a world-class educational environment, offering a journey of intellectual transformation.",
     image: "https://cilearningschool.com/galgotias_incubation_centre/web/wp-content/uploads/2024/08/sunil.jpg",
+    linkedin: "https://www.linkedin.com/in/suneel-galgotia-77112b19/"
   },
   {
     name: "Dr. Dhruv",
@@ -81,10 +107,16 @@ const people = [
 
 export default function PersonCards() {
   const classes = useStyles();
-  const [expandedIndex, setExpandedIndex] = React.useState<number | null>(null); // Corrected state initialization
+  const [expandedIndex, setExpandedIndex] = React.useState<number | null>(null);
 
   const handleReadMoreClick = (index: number) => {
-    setExpandedIndex(expandedIndex === index ? null : index); // Toggle expansion
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
+  const handleLinkedInClick = (linkedinUrl: string | undefined) => { // Type the argument
+    if (linkedinUrl) {
+      window.open(linkedinUrl, '_blank');
+    }
   };
 
   return (
@@ -95,10 +127,9 @@ export default function PersonCards() {
             <CardActionArea>
               <CardMedia
                 component="img"
-                height="180"
+                className={classes.cardImage}
                 image={person.image}
                 alt={person.name}
-                className={classes.cardImage}
               />
               <CardContent className={classes.cardContent}>
                 <Typography className={classes.name} variant="h6">
@@ -107,13 +138,10 @@ export default function PersonCards() {
                 <Typography className={classes.designation} variant="body2">
                   {person.designation}
                 </Typography>
-                <Typography className={classes.description}>
-                  {expandedIndex === index
-                    ? person.description
-                    : person.description.length > 150
-                    ? `${person.description.substring(0, 150)}...`
-                    : person.description}
+                <Typography className={expandedIndex === index ? classes.expandedDescription : classes.description} >
+                  {person.description}
                 </Typography>
+
                 {person.description.length > 150 && (
                   <Button
                     className={classes.button}
@@ -123,6 +151,14 @@ export default function PersonCards() {
                     {expandedIndex === index ? 'Read Less' : 'Read More'}
                   </Button>
                 )}
+                <IconButton
+                    className={classes.linkedinIcon}
+                    onClick={() => handleLinkedInClick(person.linkedin)}
+                    aria-label="LinkedIn"
+                    disabled={!person.linkedin} // Disable if no LinkedIn URL
+                  >
+                    <LinkedInIcon />
+                  </IconButton>
               </CardContent>
             </CardActionArea>
           </Card>

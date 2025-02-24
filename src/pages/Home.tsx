@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, Award, Users, Lightbulb } from 'lucide-react';
 import { motion } from 'framer-motion';
 import PersonCards from '../components/card';
+import {InfiniteMovingCardsDemo} from '../components/crousel';
 
 const Home = () => {
   return (
@@ -89,9 +90,9 @@ const Home = () => {
         </div>
       </section>
       <section className='mx-40 mt-14'>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Governance</h2>
-      </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Governance</h2>
+        </div>
         <PersonCards />
 
       </section>
@@ -144,6 +145,10 @@ const Home = () => {
             ))}
           </div>
         </div>
+      </section>
+      <section>
+      <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Testimonial</h2>
+        <InfiniteMovingCardsDemo />
       </section>
     </div>
   );
