@@ -1,32 +1,50 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Linkedin, Twitter, Mail, Users, Star } from 'lucide-react';
+import { Linkedin, Twitter, Mail, Users, Star, Instagram } from 'lucide-react';
+import { i, ins } from 'framer-motion/client';
 
 const Team = () => {
   const teamMembers = {
-    leadership: [
+    mentor:[
       {
-        name: 'Dr. Kamal Kishore Malhotra',
-        role: 'CEO',
-        image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-        social: {
-          linkedin: 'https://www.linkedin.com/in/kamal-kishor-malhotra-bb76a221a',
-          email: 'mailto:amit@example.com'
-        }
+        name:'Prof. (Dr) Avadhesh Kumar',
+        role:'Pro Vice Chancellor',
+        image:'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740344841/pvc_curluo.png',
+        social:{
+          linkedin:'https://www.linkedin.com/in/avadhesh-kumar-3a0b2b1b4/',
+          instagram:'https://www.instagram.com/avadhesh_kumar/',
+        }},
+
+        {
+          name: 'Dr. Kamal Kishore Malhotra',
+          role: 'CEO',
+          image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+          social: {
+            linkedin: 'https://www.linkedin.com/in/kamal-kishor-malhotra-bb76a221a',
+            instagram: 'https://www.instagram.com/kamalkishormalhotra/',
+          }
       },
-      {
-        name: 'Dr. Aradhana Galgotia',
-        role: 'Director Operations',
-        image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-        social: {
-          linkedin: '#',
-          twitter: '#',
-          email: 'mailto:rahul@example.com'
-        }
+        {
+          name: 'Mr. Sonu Kadam',
+          role: 'Incubation Manager',
+          image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+          social: {
+            linkedin: 'https://www.linkedin.com/in/kamal-kishor-malhotra-bb76a221a',
+            instagram: 'https://www.instagram.com/kamalkishormalhotra/',
+          }
       },
-      
+        {
+          name: 'Mr. Saurabh Arya',
+          role: 'Marketing Manager',
+          image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+          social: {
+            linkedin: 'https://www.linkedin.com/in/kamal-kishor-malhotra-bb76a221a',
+            instagram: 'https://www.instagram.com/kamalkishormalhotra/',
+          }
+      }
     ],
-    ecell: [
+    leadership: [
+      
       {
         name: 'Aastha Bajaj',
         role: 'President',
@@ -37,10 +55,11 @@ const Team = () => {
           email: 'mailto:sneha@example.com'
         }
       },
+      
       {
         name: 'Anshu Raj',
         role: 'Vice President',
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337946/uw5s0lf0agzj1cydoya6.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/anshu-raj2006',
           twitter: '#',
@@ -50,7 +69,7 @@ const Team = () => {
       {
         name: 'Abhinna Chaudhary',
         role: 'Secretary',
-        image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740344928/ABHINNA-CHAUDHARY-_Secretary__acfro8.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/abhinna-chaudhary-203a3a260',
           twitter: '#',
@@ -60,7 +79,7 @@ const Team = () => {
       {
         name: 'Umang Jain',
         role: 'Treasurer',
-        image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337945/q68ngp9zffkhco7wcoig.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/umangjain2003',
           twitter: '#',
@@ -72,7 +91,7 @@ const Team = () => {
       {
         name: 'Tanishqa Giri',
         role: 'Startup Development Team',
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337945/xhzikyd7yd1whsavkhco.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/tanishqa-giri-b29a15260',
           twitter: '#',
@@ -82,7 +101,7 @@ const Team = () => {
       {
         name: 'Shreeshant Prasad',
         role: 'Technical Team',
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740344653/IMG_20241113_172609863_pg6tyk.jpg',
         social: {
           linkedin: 'https://www.linkedin.com/in/shreeshant-prasad-1b1656297/',
           twitter: '#',
@@ -92,7 +111,7 @@ const Team = () => {
       {
         name: 'Anshika Saxena',
         role: 'Public Relations Team',
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337946/tpj7colvdm4neyuycjuk.jpg',
         social: {
           linkedin: 'https://www.linkedin.com/in/shreeshant-prasad-1b1656297/',
           twitter: '#',
@@ -112,7 +131,7 @@ const Team = () => {
       {
         name: 'Shaivy Patel',
         role: 'Marketing Head',
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337946/ifzbbyldicdq6htjsc9q.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/shaivy-patel-2b97142a5',
           twitter: '#',
@@ -132,7 +151,17 @@ const Team = () => {
       {
         name: 'Piyush Bhardwaj',
         role: 'Event Management Head',
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337945/skoyacaeirixaaciwuhz.png',
+        social: {
+          linkedin: 'https://www.linkedin.com/in/piyush-bhardwaj-2a6b98247',
+          twitter: '#',
+          email: 'mailto:john@example.com'
+        }
+      },
+      {
+        name: 'Karan Chauhan',
+        role: 'Media Team Head',
+        image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337946/roawr5fexwkqbsg7ihyc.jpg',
         social: {
           linkedin: 'https://www.linkedin.com/in/piyush-bhardwaj-2a6b98247',
           twitter: '#',
@@ -143,13 +172,13 @@ const Team = () => {
     ]
   };
 
-  const TeamSection = ({ title, members, icon: Icon }: { title: string; members: { name: string; role: string; image: string; social: { linkedin?: string; twitter?: string; email?: string } }[]; icon: React.ComponentType<{ className?: string }> }) => (
+  const TeamSection = ({ title, members, icon: Icon }: { title: string; members: { name: string; role: string; image: string; social: { linkedin?: string; twitter?: string; email?: string; instagram?: string } }[]; icon: React.ComponentType<{ className?: string }> }) => (
     <div className="mb-16">
       <div className="flex items-center mb-8">
         <Icon className="h-8 w-8 text-blue-400 mr-3" />
         <h2 className="text-2xl font-bold text-gray-100">{title}</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {members.map((member, index) => (
           <motion.div
             key={index}
@@ -197,6 +226,15 @@ const Team = () => {
                     <Mail className="h-5 w-5" />
                   </motion.a>
                 )}
+                {member.social.instagram && (
+                  <motion.a
+                    whileHover={{ scale: 1.2 }}
+                    href={member.social.instagram}
+                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                  >
+                    <Instagram className="h-5 w-5" />
+                  </motion.a>
+                )}
               </div>
             </div>
           </motion.div>
@@ -220,8 +258,8 @@ const Team = () => {
           </p>
         </motion.div>
 
+        <TeamSection title="Our Mentor" members={teamMembers.mentor} icon={Star} />
         <TeamSection title="Leadership Team" members={teamMembers.leadership} icon={Star} />
-        <TeamSection title="Core Team" members={teamMembers.ecell} icon={Users} />
         <TeamSection title="Heads" members={teamMembers.head} icon={Users} />
       </div>
     </div>
