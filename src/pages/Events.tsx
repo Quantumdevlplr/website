@@ -86,7 +86,7 @@ const events: Events = {
   ]
 };
 
-const EventCard = ({ event }: { event: Event }) => {
+const EventCard = ({ event }: { event: EventDetails }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
@@ -246,7 +246,6 @@ const EventCarousel = ({ year, events } : EventCarouselProps) => {
 
 const Event = () => {
   return (
-<<<<<<< HEAD
     <div className="py-20 bg-[radial-gradient(circle,rgba(255,247,212,1),rgba(255,217,90,0.8),rgba(192,127,0,0.6),rgba(76,61,61,0.4))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-center mb-16 text-gray-100">Our Events</h1>
@@ -258,14 +257,6 @@ const Event = () => {
             ))}
         </div>
       </div>
-=======
-    <div className="max-w-screen-xl mx-auto py-12 px-6">
-      {Object.entries(events)
-        .sort((a, b) => b[0] - a[0]) // Sort the years in descending order (2025, 2024, 2023, 2022)
-        .map(([year, events]) => (
-          <EventCarousel key={year} year={year} events={events} />
-        ))}
->>>>>>> d7f256e (refactor: simplify useStyles definition in card component)
     </div>
   );
 };
