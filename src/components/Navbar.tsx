@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X, Rocket } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const navItems = [
   { path: '/', label: 'Home' },
@@ -18,18 +18,17 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full bg-gray-800 shadow-lg z-50">
+    <nav className="fixed top-0 w-full bg-black shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
             <NavLink to="/" className="flex items-center space-x-2">
-              <Rocket className="h-8 w-8 text-blue-400" />
-              <span className="font-bold text-xl text-gray-200">GU E-Cell</span>
+            <img className='h-30 w-30' src="https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg" alt="E-cell logo" />
             </NavLink>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-4">
+          <div className="hidden md:flex md:items-center md:space-x-4 pr-24">
             {navItems.map((item) => (
               <NavLink
                 key={item.path}

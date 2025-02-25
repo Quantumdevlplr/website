@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Target, Award, Users, Rocket } from 'lucide-react';
 
 const About = () => {
+
+  const [isExpanded, setIsExpanded] = useState(false)
+  
+  const fullText =
+  "Entrepreneurship Cell, Galgotias University strives to stimulate and encourage entrepreneurship and innovation, both within Entrepreneurship Cell and beyond. We endeavour to help aspiring entrepreneurs overcome any hurdles they face and support them in any way possible, including by connecting them to mentors and investors and providing any other support they need. Apart from this, we attempt to enhance the culture of entrepreneurship and invention. From hosting talks with the leaders of various industries, conducting workshops to propagate skills related to entrepreneurship to organizing events and competitions that enable participants to showcase their skills, E-Cell aims to build a community of innovation and excellence.";
+
+const shortText = fullText.split(" ").slice(0, 30).join(" ") + "..."; 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-[radial-gradient(circle,rgba(255,247,212,1),rgba(255,217,90,0.8),rgba(192,127,0,0.6),rgba(76,61,61,0.4))]">
       {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center justify-center bg-gradient-to-r from-blue-900 to-purple-900 text-white">
+      <section className="relative h-[60vh] flex items-center justify-center ">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
@@ -19,7 +26,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold mb-4"
+            className="text-4xl md:text-6xl font-bold mb-4 text-black"
           >
             About Us
           </motion.h1>
@@ -27,15 +34,19 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl max-w-2xl mx-auto"
+            className="text-xl max-w-2xl mx-auto text-black"
           >
-            Entrepreneurship Cell, Galgotias University strives to stimulate and encourage entrepreneurship and innovation, both within Entrepreneurship Cell and beyond. We endeavour to help aspiring entrepreneurs overcome any hurdles they face and support them in any way possible, including by connecting them to mentors and investors and providing any other support they need. Apart from this, we attempt to enhance the culture of entrepreneurship and invention. From hosting talks with the leaders of various industries, conducting workshops to propagate skills related to entrepreneurship to organizing events and competitions that enable participants to showcase their skills, E-Cell aims to build a community of innovation and excellence.
-          </motion.p>
+ {isExpanded ? fullText : shortText}          </motion.p>
+
+ <button onClick={()=> setIsExpanded(!isExpanded)}
+  className="mt-4 text-blue-600 font-semibold hover:underline">
+    {isExpanded? "Read Less" : "Read More"}
+ </button>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-gray-800">
+      <section className="py-24 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <motion.div
