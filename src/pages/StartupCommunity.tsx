@@ -37,8 +37,8 @@ const StartupCommunity = () => {
       {/* Featured Startups */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Featured Startups</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">Featured Startups</h2>
+          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 name: 'TechStart',
@@ -64,7 +64,7 @@ const StartupCommunity = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="bg-white rounded-lg shadow-lg overflow-hidden"
+                className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
               >
                 <img
                   src={startup.image}
@@ -73,8 +73,8 @@ const StartupCommunity = () => {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{startup.name}</h3>
-                  <p className="text-gray-600 mb-4">Founded by {startup.founder}</p>
-                  <p className="text-gray-700">{startup.description}</p>
+                  <p className=" mb-4 text-white">Founded by {startup.founder}</p>
+                  <p className="text-white">{startup.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -85,7 +85,7 @@ const StartupCommunity = () => {
       {/* Resources */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Resources & Support</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">Resources & Support</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
@@ -114,7 +114,7 @@ const StartupCommunity = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="bg-white p-6 rounded-lg shadow-lg text-center"
+                className="bg-gray-800 p-6 rounded-lg shadow-lg text-center"
               >
                 <div className="flex justify-center mb-4">{resource.icon}</div>
                 <h3 className="text-lg font-semibold mb-2">{resource.title}</h3>
@@ -126,7 +126,7 @@ const StartupCommunity = () => {
       </section>
 
       {/* Partnership CTA */}
-      <section className="py-20 bg-blue-600 text-white">
+      <section className="py-20 bg-gray-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-8">Partner with Us</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">

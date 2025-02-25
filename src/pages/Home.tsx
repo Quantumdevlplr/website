@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight, Award, Users, Lightbulb } from 'lucide-react';
 import { motion } from 'framer-motion';
 import PersonCards from '../components/card';
@@ -6,9 +5,9 @@ import {InfiniteMovingCardsDemo} from '../components/crousel';
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-[radial-gradient(circle,rgba(255,247,212,1),rgba(255,217,90,0.8),rgba(192,127,0,0.6),rgba(76,61,61,0.4))]' >
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center bg-gradient-to-r from-blue-900 to-purple-900 text-white">
+      <section className="relative h-[100vh] flex items-center justify-center bg-[radial-gradient(circle,rgba(255,247,212,1),rgba(255,217,90,0.8),rgba(192,127,0,0.6),rgba(76,61,61,0.4))] text-white">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
@@ -21,7 +20,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold mb-6"
+            className="text-4xl md:text-6xl font-bold mb-6 text-black"
           >
             Ignite Your Entrepreneurial Journey
           </motion.h1>
@@ -29,7 +28,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto"
+            className="text-black text-xl md:text-2xl mb-8 max-w-3xl mx-auto"
           >
             Join Galgotias University's thriving ecosystem of Innovation and Entrepreneurship
           </motion.p>
@@ -47,11 +46,11 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-800">
+      <section className="py-20   ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-100 mb-4">Why Choose E-Cell?</h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose E-Cell?</h2>
+            <p className="text-lg text-gray-900 max-w-2xl mx-auto">
               We provide the perfect platform to transform your innovative ideas into successful ventures
             </p>
           </div>
@@ -91,15 +90,15 @@ const Home = () => {
       </section>
       <section className='mx-40 mt-14'>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Governance</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Governance</h2>
         </div>
         <PersonCards />
 
       </section>
       {/* Latest Events Section */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Upcoming Events</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Upcoming Events</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -146,8 +145,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
-      <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Testimonial</h2>
+      <section >
+      <h2 className="text-3xl font-bold text-center mb-12 text-black">Testimonial</h2>
         <InfiniteMovingCardsDemo />
       </section>
     </div>

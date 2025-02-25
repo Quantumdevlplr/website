@@ -23,11 +23,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="py-20 bg-gray-900">
+    <div className="py-20 bg-[radial-gradient(circle,rgba(255,247,212,1),rgba(255,217,90,0.8),rgba(192,127,0,0.6),rgba(76,61,61,0.4))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-4 text-gray-100">Contact Us</h1>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold mb-4 text-black">Contact Us</h1>
+          <p className="text-black max-w-2xl font-medium mx-auto">
             Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
         </div>
