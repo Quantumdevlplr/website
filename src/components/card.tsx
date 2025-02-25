@@ -10,7 +10,7 @@ import { makeStyles } from '@mui/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn'; // Import LinkedIn icon
 import IconButton from '@mui/material/IconButton';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
 
   linkedinIcon: {
     color: '#0077B5', // LinkedIn blue
@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
       textDecoration: 'underline',
     },
   },
-}));
+});
 
 
 const people = [
