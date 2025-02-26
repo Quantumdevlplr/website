@@ -1,6 +1,12 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, ExternalLink, Camera, User } from 'lucide-react';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ExternalLink,
+  Camera,
+  User,
+} from "lucide-react";
 
 interface EventDetails {
   title: string;
@@ -22,68 +28,129 @@ interface Events {
 }
 
 const events: Events = {
-  2025: [
-    {
-      title: 'E-Summit 2025',
-      date: 'March 3-4, 2025',
-      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80',
-      description: 'The biggest entrepreneurship summit featuring industry leaders and innovative startups.',
-      details: 'Join us for two days of inspiring talks, workshops, and networking opportunities with industry leaders and fellow entrepreneurs.',
-      photoLink: 'https://drive.google.com/drive/folders/example2025',
-      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
-    }
-  ],
   2024: [
     {
-      title: 'Startup Weekend',
-      date: 'April 5-7, 2024',
-      image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-      description: 'A 54-hour event where developers, designers, and business professionals come together.',
-      details: 'Experience the thrill of building a startup from scratch in just 54 hours with like-minded innovators.',
-      photoLink: 'https://drive.google.com/drive/folders/example2024',
-      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
-    }
+      title: "Startup Weekend",
+      date: "April 5-7, 2024",
+      image:
+        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      description:
+        "A 54-hour event where developers, designers, and business professionals come together.",
+      details:
+        "Experience the thrill of building a startup from scratch in just 54 hours with like-minded innovators.",
+      photoLink: "https://drive.google.com/drive/folders/example2024",
+      avatar:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    },
   ],
   2023: [
     {
-      title: 'E-Summit 2023',
-      date: 'March 15-16, 2023',
-      image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-      description: 'Annual entrepreneurship summit featuring keynote speakers and competitions.',
-      details: 'A successful gathering of entrepreneurs, investors, and industry experts sharing insights and opportunities.',
-      photoLink: 'https://drive.google.com/drive/folders/example2023',
-      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
-    }
+      title: "Law Meet AI",
+      date: "March 15, 2023",
+      image:
+        "https://res.cloudinary.com/dj7ey49h9/image/upload/v1740344382/law_meet_ai_1_sophpb.png",
+      description:
+        "Annual entrepreneurship summit featuring keynote speakers and competitions.",
+      details:
+        "At the Entrepreneurship Cell, innovation and compliance are at the core of fostering successful startups. This dynamic event featured engaging discussions on how Artificial Intelligence is transforming legal frameworks and businesses. Dr. Rodney D. Ryder led an interactive workshop where participants learned about intellectual property rights, regulatory compliance, and AI-powered solutions in the legal domain. The event included live case studies, group discussions, and a Q&A session, leaving attendees with a robust understanding of legal strategies for startups.",
+      photoLink: "https://drive.google.com/drive/folders/example2023",
+      avatar:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      title: "E-talk 1",
+      date: "March 15, 2023",
+      image:
+        "https://res.cloudinary.com/dj7ey49h9/image/upload/v1740344409/business_talk_u7wxxv.png",
+      description:
+        "Annual entrepreneurship summit featuring keynote speakers and competitions.",
+      details:
+        "As part of the E-Talk series, this session combined inspiration and practical guidance. Yatinder Singh shared his remarkable journey of resilience, offering tips on overcoming personal and professional challenges. Fit Minds Singha delved into how mindfulness and mental fitness can enhance decision-making and productivity in entrepreneurship. Attendees actively participated in an engaging dialogue about balancing mental well-being with entrepreneurial demands. The event concluded with a fitness-oriented activity, leaving participants energized and motivated.",
+      photoLink: "https://drive.google.com/drive/folders/example2023",
+      avatar:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      title: "EAD",
+      date: "March 15, 2023",
+      image:
+        "https://res.cloudinary.com/dj7ey49h9/image/upload/v1740344197/Banner_2200_x_1000_px_oygpxh.png",
+      description:
+        "Annual entrepreneurship summit featuring keynote speakers and competitions.",
+      details:
+        "EAD Noida 2023 was a flagship event that brought together some of India’s most successful entrepreneurs to inspire and mentor the next generation. The event featured keynote speeches, interactive sessions, and fireside chats covering a range of topics such as scaling businesses, navigating challenges, and embracing innovation. Attendees had the opportunity to network with leaders from companies like Info Edge, Kuku FM, Pesto Tech, Sirona Hygiene, and AstroTalk. The event concluded with an open forum where participants posed questions and received valuable advice, leaving with actionable insights and inspiration.",
+      photoLink: "https://drive.google.com/drive/folders/example2023",
+      avatar:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      title: "Meta AI certification program",
+      date: "March 15, 2023",
+      image:
+        "https://res.cloudinary.com/dj7ey49h9/image/upload/v1740344197/meta_yqojfk.png",
+      description:
+        "Annual entrepreneurship summit featuring keynote speakers and competitions.",
+      details:
+        "This exclusive Meta Certification Program was a hands-on learning experience where participants explored the nuances of digital branding, marketing, and analytics. Led by industry experts, the program featured interactive workshops, live demonstrations, and personalized feedback sessions. Participants developed strategies for building a strong online presence, leveraging social media platforms, and driving engagement. The program concluded with a certification ceremony, equipping attendees with skills and credentials to excel in the competitive startup ecosystem.",
+      photoLink: "https://drive.google.com/drive/folders/example2023",
+      avatar:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      title: "E-talk 2",
+      date: "March 15, 2023",
+      image:
+        "https://res.cloudinary.com/dj7ey49h9/image/upload/v1740344196/live_webinar_instagram_post_uvkge3.png",
+      description:
+        "Annual entrepreneurship summit featuring keynote speakers and competitions.",
+      details:
+        "This session explored the rapidly evolving world of fintech and its impact on global industries. Rahul Pal, a leading fintech expert, discussed blockchain innovations, digital payments, and financial inclusion strategies. Attendees participated in engaging discussions and case studies, gaining actionable insights into navigating the fintech ecosystem. The event’s highlight was a collaborative brainstorming session where participants pitched fintech-based solutions to real-world problems, fostering innovation and teamwork.",
+      photoLink: "https://drive.google.com/drive/folders/example2023",
+      avatar:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      title: "Pitch Me 2.0",
+      date: "March 15, 2023",
+      image:
+        "https://www.ecellgu.in/static/media/pitchme2Img3.81ec1258ea69f1622d1e.JPG",
+      description:
+        "Annual entrepreneurship summit featuring keynote speakers and competitions.",
+      details:
+        "Taking the momentum from the first edition, Pitch Me: Edition 2 was designed to elevate entrepreneurial skills. Participants worked on refining their business models, enhancing presentation strategies, and addressing real-world market challenges. The expert panel provided actionable critiques, helping participants create pitches that resonated with investors and stakeholders. This event marked a step forward in fostering innovation and building investor-ready startups, offering a competitive yet nurturing environment for aspiring founders.This edition introduced advanced frameworks for pitching and market strategy development, guided by the same expert panel of Mr. Khalid Wani, Ms. Bahu, Ms. Trina Das, and Dr. Vishal Gandhi. The event empowered participants to think critically, develop market-fit solutions, and pitch confidently, showcasing their potential to disrupt industries.",
+      photoLink: "https://drive.google.com/drive/folders/example2023",
+      avatar:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    },
   ],
   2022: [
     {
-      title: 'Pitch Perfect',
-      date: 'November 10, 2022',
-      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-      description: 'Startup pitch competition with cash prizes and mentorship opportunities.',
-      details: 'An exciting competition where startups pitched their innovative ideas to expert judges and investors.',
-      photoLink: 'https://drive.google.com/drive/folders/example2022',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+      title: "Pitch Me",
+      date: "November 10, 2022",
+      image:
+        "https://www.ecellgu.in/static/media/Pitchme_1.cc8e51fc0525108cc6b9.jpg",
+      description:
+        "Startup pitch competition with cash prizes and mentorship opportunities.",
+      details:
+        "Pitch Me is a series event of pitching competiton which occurs yearly. Industry investors come and judges the idea. Pitch Me was an annual entrepreneurial extravaganza where innovators had 10 minutes to pitch their game-changing ideas to industry investors and a panel of seasoned judges. This dynamic event combined high-stakes competition with invaluable networking opportunities, offering entrepreneurs the chance to secure investment, refine their concepts, and form lasting connections within the startup ecosystem. Joining us at Pitch Me meant witnessing the birth of the next big thing and being a part of the innovation revolution.",
+      photoLink: "https://drive.google.com/drive/folders/example2022",
+      avatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
     },
     {
-      title: 'Pitch Perfect',
-      date: 'November 10, 2022',
-      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-      description: 'Startup pitch competition with cash prizes and mentorship jhdiluhxiludfz hivuheidlhuze jszdivs  sjeh hbwa i ciaie cawbw egaiu ug iu aif aiueg fga3 ga ig ifgawe sgfaiuw ig iuag iuwgesa opportunities.',
-      details: 'An exciting competition wherejsduibih si hfh ae h hiwaeh ihawi ehe oawehf weh fiaw fiuwea iweuf iawef iur iuiweaigiuwg iuwiiaewg fiweu f3figawi iuwge iawei hfiwauea flusgweifg iuwg iwae f wieg iuwe fw ii ahw ehflisdh gshef s gu hie fiwhkh slhe luhe h ihsle hgshzlhserh iluewh hsel rhgioh;oihg;lhsgohdroihgsjghcvh bsehz;oshd;ghx;oihsreoih goie hh h ighs hghd sheoij iiooioishher  ohoih oiewhohoi hiuih i hheufserhgse  i ihwhe hsawh fwhefh sehgslghslehgisueh 8a wehf j h iuhiuh z iuahw4ifhsiu hskejrh sh sz skjvs ieuhrsjkvjs iuzhgiuh iue hs uh siuhvr iuawh ih iuhes jsiuhxerjvsxigrjbzvjs ,jj veru ih kxjd is iuers isue gish sjd vli uvu iush kjb livuhsiuiurrh ish hvih idfhv isuirh ih vh rdhlis uhsiuh iih srh ksxjhdr lhilh dvsxh lfh iush vhdkf sdxihxdiurh xlhrlvsheilhxjhdvlhrgh  u h izhius i hzhs u gh rh ius lz oi hsh oizh oih oiehshe ih oh ewg hljse startups pitched their innovative ideas to expert judges and investors.',
-      photoLink: 'https://drive.google.com/drive/folders/example2022',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+      title: "Launch Pad",
+      date: "November 10, 2022",
+      image:
+        "https://www.ecellgu.in/static/media/Pitchme_3.941f807b296683500785.jpg",
+      description:
+        "Startup pitch competition with cash prizes and mentorship opportunities.",
+      details:
+        "Launchpad , an event that would spark innovation and creativity by bringing together founders, budding entrepreneurs, mentors, and industry leaders. It is going to be an official event series hosted by Entrepreneurship Cell, Galgotias University. It will be a 24-hour hackathon where people will get together to solve problems or create new ideas around a specific topic. There will be certain rules that everyone needs to follow while developing their product. There will also be a jury who will evaluate the final product. North- India’s Biggest Student Start-up & Entrepreneurship Event of 2023, 2 Day event on campus. Launchpad, would start by a speaker session which would act as a fuel in the minds of the budding entrepreneurs. The Speaker would be a renowned founder from the start-up ecosystem.",
+      photoLink: "https://drive.google.com/drive/folders/example2022",
+      avatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
     },
-    {
-      title: 'Pitch Perfect',
-      date: 'November 10, 2022',
-      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-      description: 'Startup pitch competition with cash prizes and mentorship jhdiluhxiludfz hivuheidlhuze jszdivs  sjeh hbwa i ciaie cawbw egaiu ug iu aif aiueg fga3 ga ig ifgawe sgfaiuw ig iuag iuwgesa opportunities.',
-      details: 'An exciting competition wherejsduibih si hfh ae h hiwaeh ihawi ehe oawehf weh fiaw fiuwea iweuf iawef iur iuiweaigiuwg iuwiiaewg fiweu f3figawi iuwge iawei hfiwauea flusgweifg iuwg iwae f wieg iuwe fw ii ahw ehflisdh gshef s gu hie fiwhkh slhe luhe h ihsle hgshzlhserh iluewh hsel rhgioh;oihg;lhsgohdroihgsjghcvh bsehz;oshd;ghx;oihsreoih goie hh h ighs hghd sheoij iiooioishher  ohoih oiewhohoi hiuih i hheufserhgse  i ihwhe hsawh fwhefh sehgslghslehgisueh 8a wehf j h iuhiuh z iuahw4ifhsiu hskejrh sh sz skjvs ieuhrsjkvjs iuzhgiuh iue hs uh siuhvr iuawh ih iuhes jsiuhxerjvsxigrjbzvjs ,jj veru ih kxjd is iuers isue gish sjd vli uvu iush kjb livuhsiuiurrh ish hvih idfhv isuirh ih vh rdhlis uhsiuh iih srh ksxjhdr lhilh dvsxh lfh iush vhdkf sdxihxdiurh xlhrlvsheilhxjhdvlhrgh  u h izhius i hzhs u gh rh ius lz oi hsh oizh oih oiehshe ih oh ewg hljse startups pitched their innovative ideas to expert judges and investors.',
-      photoLink: 'https://drive.google.com/drive/folders/example2022',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
-    }
-  ]
+  ],
 };
 
 const EventCard = ({ event }: { event: EventDetails }) => {
@@ -97,9 +164,9 @@ const EventCard = ({ event }: { event: EventDetails }) => {
       transition={{ duration: 0.6 }}
     >
       {/* Front of the card */}
-      <div 
+      <div
         className={`absolute inset-0 w-full h-full ${
-          isFlipped ? 'opacity-0 pointer-events-none' : 'opacity-100'
+          isFlipped ? "opacity-0 pointer-events-none" : "opacity-100"
         } transition-opacity duration-300`}
       >
         <div className="bg-gray-800 h-full rounded-lg overflow-hidden shadow-xl">
@@ -118,7 +185,9 @@ const EventCard = ({ event }: { event: EventDetails }) => {
             </motion.button>
           </div>
           <div className="p-6 overflow-y-auto h-[calc(400px-192px)]">
-            <h3 className="text-xl font-semibold mb-2 text-gray-100">{event.title}</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-100">
+              {event.title}
+            </h3>
             <p className="text-gray-300 mb-4">{event.date}</p>
             <p className="text-gray-400 mb-4">{event.description}</p>
             <div className="flex justify-between items-center sticky bottom-0 bg-gray-800 pt-4">
@@ -143,9 +212,9 @@ const EventCard = ({ event }: { event: EventDetails }) => {
       </div>
 
       {/* Back of the card */}
-      <div 
+      <div
         className={`absolute inset-0 w-full h-full ${
-          isFlipped ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          isFlipped ? "opacity-100" : "opacity-0 pointer-events-none"
         } transition-opacity duration-300 [transform:rotateY(180deg)]`}
       >
         <div className="bg-gray-800 h-full rounded-lg overflow-hidden shadow-xl">
@@ -162,7 +231,9 @@ const EventCard = ({ event }: { event: EventDetails }) => {
               </div>
             </div>
             <div className="flex-grow overflow-y-auto mb-6">
-              <h3 className="text-xl font-semibold mb-4 text-gray-100">Event Details</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-100">
+                Event Details
+              </h3>
               <p className="text-gray-300">{event.details}</p>
             </div>
             <div className="sticky bottom-0 flex justify-between items-center bg-gray-800 pt-4">
@@ -189,7 +260,7 @@ const EventCard = ({ event }: { event: EventDetails }) => {
   );
 };
 
-const EventCarousel = ({ year, events } : EventCarouselProps) => {
+const EventCarousel = ({ year, events }: EventCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Ensure we move by two cards at a time
@@ -218,7 +289,7 @@ const EventCarousel = ({ year, events } : EventCarouselProps) => {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <EventCard event={event}  />
+              <EventCard event={event} />
             </motion.div>
           ))}
         </div>
@@ -248,7 +319,9 @@ const Event = () => {
   return (
     <div className="py-20 bg-[radial-gradient(circle,rgba(255,247,212,1),rgba(255,217,90,0.8),rgba(192,127,0,0.6),rgba(76,61,61,0.4))]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-16 text-gray-100">Our Events</h1>
+        <h1 className="text-4xl font-bold text-center mb-16 text-gray-100">
+          Our Events
+        </h1>
         <div className="space-y-16">
           {Object.entries(events)
             .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))

@@ -123,55 +123,7 @@ const shortText = fullText.split(" ").slice(0, 30).join(" ") + "...";
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">What People Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Rahul Kumar',
-                role: 'Founder, TechStart',
-                image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-                quote: 'E-Cell provided me with the perfect platform to transform my idea into a successful startup.'
-              },
-              {
-                name: 'Priya Singh',
-                role: 'CEO, EduTech Solutions',
-                image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-                quote: 'The mentorship and support from E-Cell were instrumental in my entrepreneurial journey.'
-              },
-              {
-                name: 'Amit Patel',
-                role: 'CTO, Innovation Labs',
-                image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-                quote: 'E-Cell events and workshops helped me network with industry leaders and like-minded entrepreneurs.'
-              }
-            ].map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="bg-gray-900 p-6 rounded-lg shadow-lg"
-              >
-                <div className="flex items-center space-x-4 mb-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div>
-                    <h3 className="font-semibold text-gray-100">{testimonial.name}</h3>
-                    <p className="text-gray-400 text-sm">{testimonial.role}</p>
-                  </div>
-                </div>
-                <p className="text-gray-300 italic">"{testimonial.quote}"</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 };

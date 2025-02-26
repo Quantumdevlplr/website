@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Users, Building, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom'
 
 const JoinUs = () => {
   const [formType, setFormType] = useState('member');
@@ -45,19 +46,26 @@ const JoinUs = () => {
         {/* Form Type Selection */}
         <div className="flex justify-center mb-12">
           <div className="bg-gray-800 rounded-lg shadow-md p-2 inline-flex">
+            <Link to ="#">
+            <button 
+  onClick={() => {
+    setFormType('member');
+    window.open('YOUR_GOOGLE_FORM_LINK', '_blank'); // Replace with your Google Form link
+  }}
+  className={`px-6 py-2 rounded-md transition-colors flex items-center ${
+    formType === 'member'
+      ? 'bg-blue-600 text-white'
+      : 'text-gray-300 hover:bg-gray-700'
+  }`}
+>
+  <Users className="h-5 w-5 mr-2" />
+  Join as Member
+</button>
+            </Link>
             <button
-              onClick={() => setFormType('member')}
-              className={`px-6 py-2 rounded-md transition-colors flex items-center ${
-                formType === 'member'
-                  ? 'bg-blue-600 text-white'
-                  : 'text-gray-300 hover:bg-gray-700'
-              }`}
-            >
-              <Users className="h-5 w-5 mr-2" />
-              Join as Member
-            </button>
-            <button
-              onClick={() => setFormType('organization')}
+              onClick={() => {setFormType('organization')
+                window.open("YOUR_GOOGLE_FORM_LINK", '_blank'); // Replace with your Google Form link
+              }}
               className={`px-6 py-2 rounded-md transition-colors flex items-center ${
                 formType === 'organization'
                   ? 'bg-blue-600 text-white'
