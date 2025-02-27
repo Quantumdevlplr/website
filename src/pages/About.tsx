@@ -13,7 +13,7 @@ const shortText = fullText.split(" ").slice(0, 30).join(" ") + "...";
   return (
     <div className="bg-[radial-gradient(circle,rgba(255,247,212,1),rgba(255,217,90,0.8),rgba(192,127,0,0.6),rgba(76,61,61,0.4))]">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center ">
+      <section className="relative h-screen flex items-center justify-center ">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
