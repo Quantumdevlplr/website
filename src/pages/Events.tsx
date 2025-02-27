@@ -30,14 +30,65 @@ interface Events {
 const events: Events = {
   2024: [
     {
-      title: "Startup Weekend",
+      title: "AICSSYC 2024 - Startup Pitching Competition",
       date: "April 5-7, 2024",
       image:
         "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
       description:
-        "A 54-hour event where developers, designers, and business professionals come together.",
+        "E-Cell Galgotias played a vital role in organizing the *Startup Pitching Competition* at the *12th IEEE All India Computer Society Student and Young Professional Congress (AICSSYC 2024)*",
       details:
-        "Experience the thrill of building a startup from scratch in just 54 hours with like-minded innovators.",
+        "This event provided student entrepreneurs with a platform to pitch their innovative ideas in front of industry experts, investors, and startup mentors, receiving valuable feedback and networking opportunities.",
+      photoLink: "https://drive.google.com/drive/folders/example2024",
+      avatar:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      title: "Volunteering at Bharat Shiksha Expo 2024",
+      date: "April 5-7, 2024",
+      image:
+        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      description:
+        "E-Cell members actively participated in the *Bharat Shiksha Expo*, an initiative promoting education, innovation, and entrepreneurship",
+      details:
+        "As volunteers, they engaged with students, educators, and industry leaders, facilitating discussions on startup culture, technological advancements, and the future of education in India.",
+      photoLink: "https://drive.google.com/drive/folders/example2024",
+      avatar:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      title: "Startup Community Launch - Startअब",
+      date: "April 5-7, 2024",
+      image:
+        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      description:
+        "A landmark event in E-Cell’s journey, *Startअब* was officially launched at Galgotias University, creating a thriving startup ecosystem for budding entrepreneurs.",
+      details:
+        "The event featured insightful speaker sessions, panel discussions, and collaborations, setting the stage for a new era of student-led innovation. ",
+      photoLink: "https://drive.google.com/drive/folders/example2024",
+      avatar:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      title: "Government Funding Opportunities",
+      date: "April 5-7, 2024",
+      image:
+        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      description:"Knowledge Session by IIT Ropar",
+      details:
+        "A highly informative session conducted by *Ms. Radhika Trikha, CEO IHUB-AWaDH, IIT Ropar, where students gained in-depth knowledge about **government funding opportunities* available for startups. The session highlighted grants, incubation support, and resources essential for early-stage startups to scale and succeed.",
+      photoLink: "https://drive.google.com/drive/folders/example2024",
+      avatar:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    },
+    {
+      title: "Galgotias Ideathon",
+      date: "April 5-7, 2024",
+      image:
+        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      description:
+        "One of the most anticipated events of the year, the *Galgotias Ideathon*",
+      details:
+        " It encouraged students to brainstorm and develop innovative solutions to real-world challenges. Participants worked on groundbreaking ideas, received mentorship, and competed for incubation and funding opportunities.",
       photoLink: "https://drive.google.com/drive/folders/example2024",
       avatar:
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
