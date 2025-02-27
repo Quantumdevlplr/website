@@ -41,23 +41,41 @@ const StartupCommunity = () => {
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: 'TechStart',
-                founder: 'Rahul Kumar',
-                description: 'AI-powered education platform revolutionizing online learning',
-                image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+                name: 'Portfolio management',
+                founder: 'Saket Maharaj ',
+                description: 'Managers those people portfolio who are not able to give time in stock market',
+               
               },
               {
-                name: 'EcoSolutions',
-                founder: 'Priya Singh',
-                description: 'Sustainable packaging solutions for e-commerce businesses',
-                image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+                name: 'Stitched',
+                founder: 'Lalit Mohan Joshi',
+                description: 'Stitched offers personalized, custom-made clothing through a streamlined online platform. Customers select from a variety of options and work closely with skilled tailors to create unique, perfectly fitting garments.',
+  
+              },
+              {
+                name: 'Voyago',
+                founder: 'Aryan Raj',
+                description: 'Voyago, "Explore the Unknown," solves travel planning issues for adventurers by providing an AI-driven app that uncovers hidden gems, plans optimized trips, and fosters community. It offers personalized recommendations, in-app bookings, and rewards, redefining travel experiences.',
+                image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+              },
+              {
+                name: 'Green cab',
+                founder: 'Atul mani tripathi ',
+                description: 'In this we introduce cab service, in which only ev cars will allow to give service. Eco-friendly. Cities like, Delhi-NCR, Mumbai, Hyderabad, Bangalore, who has high AQI, will prefer ev for sure. Huge demand in future.',
+                image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
               },
               {
                 name: 'HealthTech',
                 founder: 'Amit Patel',
                 description: 'Remote healthcare monitoring system for rural areas',
                 image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-              }
+              },
+              {
+                name: 'HealthTech',
+                founder: 'Amit Patel',
+                description: 'Remote healthcare monitoring system for rural areas',
+                image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+              },
             ].map((startup, index) => (
               <motion.div
                 key={index}
@@ -66,11 +84,11 @@ const StartupCommunity = () => {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
               >
-                <img
+                {/* <img
                   src={startup.image}
                   alt={startup.name}
                   className="w-full h-48 object-cover"
-                />
+                /> */}
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{startup.name}</h3>
                   <p className=" mb-4 text-white">Founded by {startup.founder}</p>
