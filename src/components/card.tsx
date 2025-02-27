@@ -104,6 +104,7 @@ const people = [
     designation: "Director Operations",
     description: "The Indian higher education system is undergoing significant transformation, driven by social, economic, and demographic changes. At Galgotias University, we are continuously adapting to stay at the forefront of this evolution, offering globally relevant curricula, hands-on pedagogies, and state-of-the-art infrastructure. Our use of digital learning, blended learning, MOOCs, and a vibrant startup ecosystem enriches campus life. We offer a diverse range of courses in STEM, liberal education, and other fields, fostering research-based learning and personality development.Inspired by Rabindranath Tagore’s philosophy of holistic education, we focus on developing well-rounded individuals. Following Ratan Tata’s vision, we aim to increase education accessibility through online programs, helping students across India become employable and contributing members of society. I welcome you to Galgotias University and look forward to supporting your journey to become confident, resilient, and ready to contribute to India’s growth.",
     image: "https://gicrise.in/wp-content/themes/gicentre/assets/images/leader_img4.jpg",
+    linkedin:"https://www.linkedin.com/in/aradhanagalgotia"
   },
 ];
 

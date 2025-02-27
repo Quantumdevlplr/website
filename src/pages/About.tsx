@@ -13,7 +13,7 @@ const shortText = fullText.split(" ").slice(0, 30).join(" ") + "...";
   return (
     <div className="bg-[radial-gradient(circle,rgba(255,247,212,1),rgba(255,217,90,0.8),rgba(192,127,0,0.6),rgba(76,61,61,0.4))]">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center ">
+      <section className="relative h-screen flex items-center justify-center ">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
@@ -93,17 +93,17 @@ const shortText = fullText.split(" ").slice(0, 30).join(" ") + "...";
             {[
               {
                 icon: <Award className="h-12 w-12 text-blue-400" />,
-                title: '50+ Startups',
+                title: '150+ Startups',
                 description: 'Successfully incubated and supported through our programs'
               },
               {
                 icon: <Users className="h-12 w-12 text-blue-400" />,
                 title: '1000+ Members',
-                description: 'Active student entrepreneurs in our community'
+                description: 'Student entrepreneurs, our community is at the forefront of entrepreneurial development'
               },
               {
                 icon: <Target className="h-12 w-12 text-blue-400" />,
-                title: '₹1Cr+ Funding',
+                title: '₹50 lakh Funding',
                 description: 'Raised by our startups through various channels'
               }
             ].map((achievement, index) => (

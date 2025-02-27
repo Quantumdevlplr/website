@@ -29,8 +29,7 @@ const Layout = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="hover:text-blue-400">Twitter</a>
-                <a href="#" className="hover:text-blue-400">LinkedIn</a>
+                <a href="https://www.linkedin.com/company/entrepreneurship-cell-galgotias-university" className="hover:text-blue-400">LinkedIn</a>
                 <a href="#" className="hover:text-blue-400">Instagram</a>
               </div>
             </div>

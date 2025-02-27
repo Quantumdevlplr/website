@@ -28,6 +28,33 @@ interface Events {
 }
 
 const events: Events = {
+  2025:[
+    {
+      title: "Galgotias Ideathon",
+      date: "April 5-7, 2024",
+      image:
+        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      description:
+        "One of the most anticipated events of the year, the *Galgotias Ideathon*",
+      details:
+        " It encouraged students to brainstorm and develop innovative solutions to real-world challenges. Participants worked on groundbreaking ideas, received mentorship, and competed for incubation and funding opportunities.",
+      photoLink: "https://drive.google.com/drive/folders/example2024",
+      avatar:
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
+    },
+    {
+      title: "Government Funding Opportunities",
+      date: "April 5-7, 2024",
+      image:
+        "https://res.cloudinary.com/dj7ey49h9/image/upload/v1740653078/Ecell/lsbsknhocljjzadrmhgh.png",
+      description:"Knowledge Session by IIT Ropar",
+      details:
+        "A highly informative session conducted by *Ms. Radhika Trikha, CEO IHUB-AWaDH, IIT Ropar, where students gained in-depth knowledge about **government funding opportunities* available for startups. The session highlighted grants, incubation support, and resources essential for early-stage startups to scale and succeed.",
+      photoLink: "https://drive.google.com/drive/folders/example2024",
+      avatar:
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
+    },
+  ],
   2024: [
     {
       title: "AICSSYC 2024 - Startup Pitching Competition",
@@ -40,59 +67,36 @@ const events: Events = {
         "This event provided student entrepreneurs with a platform to pitch their innovative ideas in front of industry experts, investors, and startup mentors, receiving valuable feedback and networking opportunities.",
       photoLink: "https://drive.google.com/drive/folders/example2024",
       avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     },
     {
       title: "Volunteering at Bharat Shiksha Expo 2024",
       date: "April 5-7, 2024",
       image:
-        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        "https://res.cloudinary.com/dj7ey49h9/image/upload/v1740652347/Ecell/ypbwxd6r25ma2fnpoyhk.jpg",
       description:
         "E-Cell members actively participated in the *Bharat Shiksha Expo*, an initiative promoting education, innovation, and entrepreneurship",
       details:
         "As volunteers, they engaged with students, educators, and industry leaders, facilitating discussions on startup culture, technological advancements, and the future of education in India.",
       photoLink: "https://drive.google.com/drive/folders/example2024",
       avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     },
     {
       title: "Startup Community Launch - Startअब",
       date: "April 5-7, 2024",
       image:
-        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        "https://res.cloudinary.com/dj7ey49h9/image/upload/v1740651815/cnjksxeqyx3a6m7vw0rb.jpg",
       description:
         "A landmark event in E-Cell’s journey, *Startअब* was officially launched at Galgotias University, creating a thriving startup ecosystem for budding entrepreneurs.",
       details:
         "The event featured insightful speaker sessions, panel discussions, and collaborations, setting the stage for a new era of student-led innovation. ",
       photoLink: "https://drive.google.com/drive/folders/example2024",
       avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     },
-    {
-      title: "Government Funding Opportunities",
-      date: "April 5-7, 2024",
-      image:
-        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-      description:"Knowledge Session by IIT Ropar",
-      details:
-        "A highly informative session conducted by *Ms. Radhika Trikha, CEO IHUB-AWaDH, IIT Ropar, where students gained in-depth knowledge about **government funding opportunities* available for startups. The session highlighted grants, incubation support, and resources essential for early-stage startups to scale and succeed.",
-      photoLink: "https://drive.google.com/drive/folders/example2024",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-    },
-    {
-      title: "Galgotias Ideathon",
-      date: "April 5-7, 2024",
-      image:
-        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-      description:
-        "One of the most anticipated events of the year, the *Galgotias Ideathon*",
-      details:
-        " It encouraged students to brainstorm and develop innovative solutions to real-world challenges. Participants worked on groundbreaking ideas, received mentorship, and competed for incubation and funding opportunities.",
-      photoLink: "https://drive.google.com/drive/folders/example2024",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-    },
+    
+   
   ],
   2023: [
     {
@@ -106,7 +110,7 @@ const events: Events = {
         "At the Entrepreneurship Cell, innovation and compliance are at the core of fostering successful startups. This dynamic event featured engaging discussions on how Artificial Intelligence is transforming legal frameworks and businesses. Dr. Rodney D. Ryder led an interactive workshop where participants learned about intellectual property rights, regulatory compliance, and AI-powered solutions in the legal domain. The event included live case studies, group discussions, and a Q&A session, leaving attendees with a robust understanding of legal strategies for startups.",
       photoLink: "https://drive.google.com/drive/folders/example2023",
       avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     },
     {
       title: "E-talk 1",
@@ -119,7 +123,7 @@ const events: Events = {
         "As part of the E-Talk series, this session combined inspiration and practical guidance. Yatinder Singh shared his remarkable journey of resilience, offering tips on overcoming personal and professional challenges. Fit Minds Singha delved into how mindfulness and mental fitness can enhance decision-making and productivity in entrepreneurship. Attendees actively participated in an engaging dialogue about balancing mental well-being with entrepreneurial demands. The event concluded with a fitness-oriented activity, leaving participants energized and motivated.",
       photoLink: "https://drive.google.com/drive/folders/example2023",
       avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     },
     {
       title: "EAD",
@@ -132,7 +136,7 @@ const events: Events = {
         "EAD Noida 2023 was a flagship event that brought together some of India’s most successful entrepreneurs to inspire and mentor the next generation. The event featured keynote speeches, interactive sessions, and fireside chats covering a range of topics such as scaling businesses, navigating challenges, and embracing innovation. Attendees had the opportunity to network with leaders from companies like Info Edge, Kuku FM, Pesto Tech, Sirona Hygiene, and AstroTalk. The event concluded with an open forum where participants posed questions and received valuable advice, leaving with actionable insights and inspiration.",
       photoLink: "https://drive.google.com/drive/folders/example2023",
       avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     },
     {
       title: "Meta AI certification program",
@@ -145,7 +149,7 @@ const events: Events = {
         "This exclusive Meta Certification Program was a hands-on learning experience where participants explored the nuances of digital branding, marketing, and analytics. Led by industry experts, the program featured interactive workshops, live demonstrations, and personalized feedback sessions. Participants developed strategies for building a strong online presence, leveraging social media platforms, and driving engagement. The program concluded with a certification ceremony, equipping attendees with skills and credentials to excel in the competitive startup ecosystem.",
       photoLink: "https://drive.google.com/drive/folders/example2023",
       avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     },
     {
       title: "E-talk 2",
@@ -158,7 +162,7 @@ const events: Events = {
         "This session explored the rapidly evolving world of fintech and its impact on global industries. Rahul Pal, a leading fintech expert, discussed blockchain innovations, digital payments, and financial inclusion strategies. Attendees participated in engaging discussions and case studies, gaining actionable insights into navigating the fintech ecosystem. The event’s highlight was a collaborative brainstorming session where participants pitched fintech-based solutions to real-world problems, fostering innovation and teamwork.",
       photoLink: "https://drive.google.com/drive/folders/example2023",
       avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     },
     {
       title: "Pitch Me 2.0",
@@ -171,7 +175,7 @@ const events: Events = {
         "Taking the momentum from the first edition, Pitch Me: Edition 2 was designed to elevate entrepreneurial skills. Participants worked on refining their business models, enhancing presentation strategies, and addressing real-world market challenges. The expert panel provided actionable critiques, helping participants create pitches that resonated with investors and stakeholders. This event marked a step forward in fostering innovation and building investor-ready startups, offering a competitive yet nurturing environment for aspiring founders.This edition introduced advanced frameworks for pitching and market strategy development, guided by the same expert panel of Mr. Khalid Wani, Ms. Bahu, Ms. Trina Das, and Dr. Vishal Gandhi. The event empowered participants to think critically, develop market-fit solutions, and pitch confidently, showcasing their potential to disrupt industries.",
       photoLink: "https://drive.google.com/drive/folders/example2023",
       avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     },
   ],
   2022: [
@@ -186,7 +190,7 @@ const events: Events = {
         "Pitch Me is a series event of pitching competiton which occurs yearly. Industry investors come and judges the idea. Pitch Me was an annual entrepreneurial extravaganza where innovators had 10 minutes to pitch their game-changing ideas to industry investors and a panel of seasoned judges. This dynamic event combined high-stakes competition with invaluable networking opportunities, offering entrepreneurs the chance to secure investment, refine their concepts, and form lasting connections within the startup ecosystem. Joining us at Pitch Me meant witnessing the birth of the next big thing and being a part of the innovation revolution.",
       photoLink: "https://drive.google.com/drive/folders/example2022",
       avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     },
     {
       title: "Launch Pad",
@@ -199,7 +203,7 @@ const events: Events = {
         "Launchpad , an event that would spark innovation and creativity by bringing together founders, budding entrepreneurs, mentors, and industry leaders. It is going to be an official event series hosted by Entrepreneurship Cell, Galgotias University. It will be a 24-hour hackathon where people will get together to solve problems or create new ideas around a specific topic. There will be certain rules that everyone needs to follow while developing their product. There will also be a jury who will evaluate the final product. North- India’s Biggest Student Start-up & Entrepreneurship Event of 2023, 2 Day event on campus. Launchpad, would start by a speaker session which would act as a fuel in the minds of the budding entrepreneurs. The Speaker would be a renowned founder from the start-up ecosystem.",
       photoLink: "https://drive.google.com/drive/folders/example2022",
       avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+        "https://www.ecellgu.in/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     },
   ],
 };
@@ -239,7 +243,7 @@ const EventCard = ({ event }: { event: EventDetails }) => {
             <h3 className="text-xl font-semibold mb-2 text-gray-100">
               {event.title}
             </h3>
-            <p className="text-gray-300 mb-4">{event.date}</p>
+
             <p className="text-gray-400 mb-4">{event.description}</p>
             <div className="flex justify-between items-center sticky bottom-0 bg-gray-800 pt-4">
               <button
