@@ -294,8 +294,8 @@ const StartupCommunity = () => {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="bg-slate-500 p-6 rounded-lg shadow-lg text-center"
               >
-                <div className="flex justify-center mb-4">{resource.icon}</div>
-                <h3 className="text-lg font-semibold mb-2">{resource.title}</h3>
+                <div className="flex justify-center text-2xl mb-4">{resource.name}</div>
+                <h3 className="text-lg font-semibold mb-2">{resource.founder}</h3>
                 <p className="text-white">{resource.description}</p>
               </motion.div>
             ))}
