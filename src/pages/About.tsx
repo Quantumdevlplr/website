@@ -93,17 +93,17 @@ const shortText = fullText.split(" ").slice(0, 30).join(" ") + "...";
             {[
               {
                 icon: <Award className="h-12 w-12 text-blue-400" />,
-                title: '50+ Startups',
+                title: '150+ Startups',
                 description: 'Successfully incubated and supported through our programs'
               },
               {
                 icon: <Users className="h-12 w-12 text-blue-400" />,
                 title: '1000+ Members',
-                description: 'Active student entrepreneurs in our community'
+                description: 'Student entrepreneurs, our community is at the forefront of entrepreneurial development'
               },
               {
                 icon: <Target className="h-12 w-12 text-blue-400" />,
-                title: '₹1Cr+ Funding',
+                title: '₹50 lakh Funding',
                 description: 'Raised by our startups through various channels'
               }
             ].map((achievement, index) => (

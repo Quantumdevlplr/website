@@ -70,8 +70,7 @@ const Team = () => {
         image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740344928/ABHINNA-CHAUDHARY-_Secretary__acfro8.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/abhinna-chaudhary-203a3a260',
-          twitter: '#',
-          email: 'mailto:neha@example.com'
+          instagram:'https://www.instagram.com/abhiinnaa'
         }
       },
       {
@@ -119,8 +118,7 @@ const Team = () => {
         image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337946/miacuad7msfbq8gtrx4v.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/amish-roushan-0425662a3',
-          twitter: '#',
-          email: 'mailto:john@example.com'
+          instagram:'https://www.instagram.com/aphs_amiiish_24'
         }
       },
       {
@@ -147,8 +145,7 @@ const Team = () => {
         image: 'https://res.cloudinary.com/dj7ey49h9/image/upload/v1740337945/skoyacaeirixaaciwuhz.png',
         social: {
           linkedin: 'https://www.linkedin.com/in/piyush-bhardwaj-2a6b98247',
-          twitter: '#',
-          email: 'mailto:john@example.com'
+         instagram: 'https://www.instagram.com/__piyushh____'
         }
       },
       {

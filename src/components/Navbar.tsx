@@ -8,10 +8,12 @@ const navItems = [
   { path: '/events', label: 'Events' },
   { path: '/contact', label: 'Contact' },
   { path: '/about', label: 'About' },
-  { path: '/gallery', label: 'Gallery' },
+  // { path: '/gallery', label: 'Gallery' },
   { path: '/startup-community', label: 'Startup Community' },
   { path: '/team', label: 'Team' },
-  { path: '/join-us', label: 'Join Us' },
+  { path: '/join-us', label: 'Join as Member' },
+  { path: '/join-us', label: 'Join as Organisation' },
+
 ];
 
 const Navbar = () => {
